@@ -1,0 +1,30 @@
+RewriteEngine On
+#{GET}-----Products/
+RewriteRule ^listProducts$ listProducts
+#{GET}-----Products/{1}
+#{GET}-----Products/pages/{id}
+RewriteRule ^viewProducts/(\d+)$ read?id=$1
+#{GET}-----Products/Filter=Category:cuisine
+#{GET}-----Products/OrderBy=Price:asc
+#{POST}----Products/
+RewriteRule ^createProduct$ create [L]
+#{PUT}-----Products/{id}/
+RewriteRule ^updateProduct/(\d+)$ update?id=$1
+#{DELETE}--DeleteProduct/{id}/
+RewriteRule ^deleteProduct/(\d+)$ delete?id=$1
+#{GET}-----Prodcuts/{id}/Comments
+#{GET}-----Products/{1}/Comments
+RewriteRule ^viewremarks/(\d+)$ remarks?id=$1
+#{GET}---- Products/{id}/Comments/{idComments}
+
+
+
+
+
+
+
+
+
+
+
+

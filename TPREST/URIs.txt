@@ -1,0 +1,12 @@
+{GET}-----Products/
+{GET}-----Products/{1}
+{GET}-----Products/Filter=Category:cuisine
+{GET}-----Products/OrderBy=Price:asc
+{GET}-----Products/{1}/Comments
+{GET}-----Products/pages/{id}
+{POST}----Products/
+{PUT}-----Products/{id}/
+{DELETE}--DeleteProduct/{id}/
+{GET}-----Prodcuts/{id}/Comments
+{GET}---- Products/{id}/Comments/{idComments}
+
